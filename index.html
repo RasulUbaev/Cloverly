@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <!-- <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "bg-green": "#1FBD8A",
+                "bg-yellow-200": "#F2F4E8",
+                "bg-yellow-100": "#FBFCF5",
+              },
+              fontSize: {
+                "title-h1": "60px",
+                subtitle: "18px",
+              },
+              spacing: {
+                xl: "19px",
+              },
+              borderRadius: {
+                xxl: "50px",
+              },
+              fontFamily: {
+                roboto: ["Roboto", sans - serif],
+              },
+            },
+          },
+        };
+    </script> -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgheader: '#1FBD8A',git a
+            bghover: "#192F44",
+            bgf5: "#FBFCF5",
+            bgE8: "#F2F4E8",
+            iconp: "#5C7782",
+          },
+          fontSize: {
+                titleh1: "60px",
+                herop: "18px",
+                titleh2: "32px",
+                howh2: "41px",
+                howp: "21px",
+                iconh3: "23px",
+                iconp: "15px",
+                usedh4: "24px",
+                s36: "36px"
+              },  
+              lineHeight: {
+                mp: "26px",
+              },
+          rounded: {
+            r30: "30px"
+          }
+        }
+      }
+    }
+  </script>
+
+  </head>
+  <body class="font-roboto ">
+
+    <header class="bg-bgheader px-16 h-16 mx-auto items-center">
+      <nav class="container-container h-16 mx-auto flex items-center justify-between pb-xl">
+        <ul class="flex items-center gap-x-11 text-white">
+          <li class="mr-1">
+            <a href=""><img src="./image/logo.svg" alt="logo" /></a>
+          </li>
+          <li><a class="hover:text-bghover" href="#"> Product </a></li>
+          <li><a class="hover:text-bghover" href="#">Use Cases</a></li>
+          <li><a class="hover:text-bghover" href="#">Developers</a></li>
+          <li><a class="hover:text-bghover" href="#">Pricing</a></li>
+          <li><a class="hover:text-bghover" href="#">About</a></li>
+        </ul>
+
+        <div class="flex items-center gap-9 text-white">
+          <a href="">Login</a>
+          <a href="" class="py-2.5 px-9 bg-white hover:bg-bghover hover:text-white  rounded-2xl text-[#24475B]"> Get API Keys </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="main__hero bg-bgheader px-16 pt-16 pb-24" >
+        <div class="container">
+          <div class="container__hero flex justify-between mx-auto text-white">
+             <div class="main__hero__title w-2/5 pt-16">
+            <div class="py-2 px-4 bg-[#57cea7] w-56 rounded-3xl text-center mb-4">
+              <p class="">Sustainability on Demand</p>
+            </div>
+            <div class="text-titleh1 font-normal">
+              <h1>Helping the World Go Carbon Neutral</h1>
+            </div>
+            <div class="text-herop mb-16">
+              <p>Our Sustainability-as-a-Service platform calculates and purchases carbon offsets to neutralize the environmental impact of everyday activities like ecommerce deliveries, ridesharing, flights, and more.</p>
+            </div>
+            <div class="flex gap-9">
+              <a class="bg-white text-black px-20 py-2 text-center rounded-3xl hover:bg-bghover hover:text-white" href="#">Get Started</a>
+              <a class="bg-white text-black px-20 py-2 text-center rounded-3xl hover:bg-bghover hover:text-white" href="#">Let's Talk</a>
+            </div>
+          </div>
+          <div class="relative left-16">
+            <img src="./image/Frame.png" alt="#">
+          </div>
+          </div>
+          <div class="flex justify-center">
+            <img src="./image/Frame-2.png" alt="#">
+          </div>
+        </div>
+      </section>
+
+      <section class="main__map px-16 pt-32 pb-24 bg-bgf5">
+        <div class="container">
+          <div class="main__map__page text-center">
+            <span class="text-bgheader pb-2">Cloverly API</span>
+            <h2 class="text-bghover text-titleh2 pb-4">Offset Your Carbon Footprint in Real Time</h2>
+            <p class="text-herop w-2/3 mx-auto text-bghover leading-6"  >Cloverly's powerful API calculates the impact of common carbon-intensive activities in real time and uses verified, quality carbon offset projects to neutralize them. Ready to get started? Create an account to integrate the Cloverly API for free, or contact us for custom solutions.</p>
+            <div class="pt-12">
+              <a class="bg-bgheader text-white px-20 py-2 text-center rounded-3xl hover:bg-bghover hover:text-white" href=""> Get Started for Free</a>
+              <a class="bg-bgheader text-white px-20 py-2 text-center rounded-3xl hover:bg-bghover hover:text-white" href="">Let's Talk</a>
+            </div>
+            <div class="pt-32 flex justify-center">
+              <img src="./image/map.png" alt="#">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__how bg-bgE8 pt-32">
+        <div class="container">
+          <div class="main__how__box flex justify-between px-16">
+            <div class="">
+              <span class="text-bgheader">  How It Works</span>
+              <h2 class="text-howh2 w-2/3 text-bghover">Connecting the Carbon Offset Infrastructure for a More Sustainable World</h2>
+              <p class="w-2/3 text-howp pt-4">Businesses and consumers count on Cloverly to offset their carbon footprint and create positive environmental change based on real-time business activities. Whether you implement our ready-to-use applications or install our API as part of a custom integration, Cloverly can help you go greener, faster.</p>
+              <button class="mt-5 px-8 py-2 border-2 border-green-400 rounded-full ">
+                Learn More
+              </button>
+            </div>
+
+            <ul>
+              <li class="mb-16">
+                <img class="mb-4" src="./image/icon-1.svg" alt="#">
+                <h3 class="text-iconh3 text-bghover">Matching the Offset</h3>
+                <p class="mt-2 w-2/3 text-iconp text-iconp">The Cloverly API can find and match the best offset per transaction. If your customer orders a product in California, for example, we might partner with an improved forest management project in California to keep the benefit local.</p>
+              </li>
+              <li class="mb-16">
+                <img src="./image/icon-2.svg" alt="#">
+                <h3 class="text-iconh3 text-bghover">Transaction Transparency</h3>
+                <p class="mt-2 w-2/3 text-iconp text-iconp">We believe in transparency and fully validated transactions. That's why every time you (or your customers) choose to offset an emission-producing activity with Cloverly, we provide real-time transactional data to show the location, type, and amount of carbon offset.</p>
+              </li>
+              <li class="mb-16">
+                <img  class="mb-4" src="./image/icon-3.svg" alt="#">
+                <h3 class="text-iconh3 text-bghover">Verified Sources</h3>
+                <p class="mt-2 w-2/3 text-iconp text-iconp">To effectively neutralize carbon emissions, we know that quality matters. That's why Cloverly works with reputable, internationally recognized suppliers who track and verify registered carbon offset projects.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__used pt-32">
+        <div class="container px-16">
+          <div class="text-center" >
+            <span class="text-bgheader">Use Cases</span>
+            <h2 class="text-howh2 w-1/2 mx-auto text-bghover">Used in Every Environment, to Save the Environment</h2>
+            <p class="text-herop text-bghover w-2/3 mx-auto" >There are many sources of carbon emissions, including some that we don't typically associate with environmental impacts. For example, even cloud computing requires physical servers powered by electricity. Below are a few common use cases for carbon offsetting.</p>
+          </div>
+          <ul class="mt-16 flex justify-center">
+
+            <ul>
+              <li class="flex items-center gap-9 mb-16">
+                <img src="./image/icon-4.svg" alt="#">
+                <div>
+                  <h4 class="text-usedh4 mb-4">Ecommerce</h4>
+                  <p class="iconp w-1/2 mb-4">See how Cloverly partners are offsetting ecommerce shipments through Shopify, BigCommerce, Magento, and custom integrations.</p>
+                  <a class="hover:text-bgheader" href="#">Learn more</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-9 mb-16">
+                <img src="./image/icon-6.svg" alt="#">
+                <div>
+                  <h4 class="text-usedh4 mb-4">Flights</h4>
+                  <p class="iconp w-1/2 mb-4">Take off the carbon impact of aviation. With the Cloverly API, calculate and offset miles flown and impact generated.</p>
+                   <a class="hover:text-bgheader" href="#">Learn more</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-9 mb-16">
+                <img src="./image/icon-8.svg" alt="#">
+                <div>
+                  <h4 class="text-usedh4 mb-4">Energy</h4>
+                  <p class="iconp w-1/2 mb-4">Find out how the energy industry is using carbon offsets to make a difference and create a more sustainable world.</p>
+                   <a class="hover:text-bgheader" href="#">Learn more</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-9 mb-16">
+                <img src="./image/icon-10.svg" alt="#">
+                <div>
+                  <h4 class="text-usedh4 mb-4">Fintech</h4>
+                  <p class="iconp w-1/2 mb-4">Cloverly can help identify carbon footprints based on financial transaction data and purchase the offsets needed to mitigate these effects.</p>
+                   <a class="hover:text-bgheader" href="#">Learn more</a>
+                </div>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="flex items-center gap-9 mb-16">
+                <img src="./image/icon-5.svg" alt="#">
+                <div>
+                  <h4 class="text-usedh4 mb-4">Rideshare</h4>
+                  <p class="iconp w-1/2 mb-4">Miles traveled and carbon emitted can be easily calculated and offset in real time with Cloverly.</p>
+                  <a class="hover:text-bgheader" href="#">Learn more</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-9 mb-16">
+                <img src="./image/icon-7.svg" alt="#">
+                <div>
+                  <h4 class="text-usedh4 mb-4">Enterprise Resource Planning</h4>
+                  <p class="iconp w-1/2 mb-4">Learn how enterprise software companies are using the Cloverly integration to offset their environmental effects.</p>
+                  <a class="hover:text-bgheader" href="#">Learn more</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-9 mb-16">
+                <img src="./image/icon-9.svg" alt="#">
+                <div>
+                  <h4 class="text-usedh4 mb-4">Supply Chain</h4>
+                  <p class="iconp w-1/2 mb-4">Calculate offsets based on your supply chain, make a difference, and see how others are doing it, too.</p>
+                  <a class="hover:text-bgheader" href="#">Learn more</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-9 mb-16">
+                <img src="./image/icon-11.svg" alt="#">
+                <div>
+                  <h4 class="text-usedh4 mb-4">Fleet</h4>
+                  <p class="iconp w-1/2 mb-4">You track mileage and fuel economy for your vehicle fleet. So you already have the data the Cloverly API needs to calculate and offset the carbon impact.</p>
+                  <a class="hover:text-bgheader" href="#">Learn more</a>
+                </div>
+              </li>
+            </ul>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="main__industry pt-32 pb-32 text-center">
+        <div class="container px-16">
+          <h2 class="text-titleh2 text-bghover" >Don't See Your Industry?</h2>
+          <p class="mt-4 w-1/2 mx-auto">Cloverly can accommodate a variety of use cases for many different carbon-producing activities. Even if you don't see your industry here or you're not sure what activities to offset, we can help. Reach out to Cloverly and let us get you on the path to net-zero carbon emissions.</p>
+          <button class="mt-4 bg-bghover px-16 py-2 rounded-full text-white hover:bg-bgheader">
+            Contact Us
+          </button>
+        </div>
+      </section>
+
+      <section class="main__for bg-bghover">
+        <div class="container px-16">
+          <div class="main__for__page grid grid-cols-2 justify-evenly px-16 pt-32 pb-32">
+            <div class="main__for__page__title">
+              <span class="text-bgheader">For Developers, By Developers</span>
+              <h2 class="text-white text-howh2 mb-4">Simple Integration. <br> RESTful API.</h2>
+              <p class="w-2/3 text-iconp text-herop">The Cloverly API calculates and offsets carbon emissions on a per-transaction basis. We can determine the amount of carbon emitted and offset that quantity by purchasing carbon offsets in real time. Explore our developer docs to find the right endpoints for your application, and sign up for free to get the Cloverly sandbox keys.</p>
+              <div class="mt-8 flex gap-9 ">
+                <button class="px-12 py-2 bg-white rounded-full hover:bg-bgheader hover:text-white">Get API Keys</button>
+                <button class="px-12 py-2 bg-white rounded-full hover:bg-bgheader hover:text-white">Developer Docs</button>
+              </div>
+            </div>
+            <div class="main__for__page__img">
+              <img src="./image/Frame-3.png" alt="fr">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__partner">
+        <div class="container px-16">
+          <div class="main__partner__box flex gap-32 w-full">
+
+            <div class="main__partner__box__img">
+              <img src="./image/mans.png" alt="mans">
+            </div>
+
+            <div class="main__partner__box__title pt-16">
+               <div class="title">
+                <span class="text-bgheader">Partner Spotlight</span>
+                <p class="text-iconp w-1/2 mt-2"> <b>At the JOIN data conference,</b> the team from Looker (now part of Google) used data provided by attendees to determine the carbon footprint of their travel to the conference and offset it with Cloverly.</p>
+              </div>
+              <div class="mt-16">
+                <span class="text-bgheader w-16 h-16 text-titleh2">""</span>
+              </div>
+              <div class="mt-8">
+                <p class=" w-1/2 mb-8">
+                  We built a little Javascript application to let you select how much of your carbon footprint you wanted to offset and then got an estimated price via Cloverly, which provides a simple API for purchasing Renewable Energy Certificates (RECs). Once we had the estimate from Cloverly, which helpfully tells you not just cost, but also where the RECs you're purchasing will come from, we approved the purchase and executed it via the API.
+                </p>
+                <a class="pb-8 hover:text-bgheader" href="">Read Full Story</a>
+              </div>
+              <div class="mt-12 flex gap-9 items-center">
+                <img src="./image/google.svg" alt="gg"> 
+                <p>Daniel Mintz <br> Chief Data Evangelist at Looker</p>
+              </div>
+              <div class="link mt-16 ">
+                <a class="border-2 px-16 py-2 border-green-400 rounded-full hover:bg-bghover hover:text-white hover:border-none" href="">More Partners</a>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-bgE8 pt-32 pb-16">
+        <div class="container px-16">
+          <div class="text-center bg-bghover w-1/2 mx-auto rounded-3xl pt-16 pb-16">
+            <h2 class="text-s36 text-white">What Activities Will You Offset?</h2>
+            <p class="text-white text-howp mb-16">Neutralize your carbon footprint with the <br> Cloverly API.</p>
+            <a class="border-2 bg-bgheader px-16 py-2 rounded-full border-none text-white hover:bg-white hover:text-bghover" href="">Try Cloverly</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-bgE8 pt-16 pb-24 ">
+        <div class="container px-16 text-center">
+         <span class="text-bgheader">Cloverly Blog</span>
+         <h2 class="text-howh2 text-bghover mb-16">The Latest in the World of Sustainability</h2>
+         <a class="border-2 px-16 py-2 border-green-400 rounded-full hover:bg-bghover hover:text-white hover:border-none" href="">Read More</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-bghover">
+      <div class="container px-16"  >
+        <div class="footer__logo__box flex justify-between pt-16 pb-16">
+          <div>
+            <img src="./image/logofooter.svg" alt="logo">
+          </div>
+          <div class="flex items-center gap-9 text-white">
+            <a href="">Login</a>
+            <a href="" class="py-1 px-9 bg-bgheader hover:bg-white hover:text-black   rounded-2xl text-white"> Get API Keys </a>
+          </div>
+        </div>
+
+        <hr>
+        <br>
+        <ul class="text-white grid grid-cols-5">
+          <ul class="grid gap-y-7">
+            <li >Product</li>
+            <li>Emission Calculations</li>
+            <li>Diverse Offset Portfolio</li>
+            <li>Matching the Offset</li>
+            <li>Transparent Reporting</li>
+            <li>Flexible API Integration</li>
+            <li>Verified Carbon Offsets</li>
+          </ul>
+
+          <ul class="grid gap-y-7">
+            <li>Use Cases</li>
+            <li>Ecommerce</li>
+            <li>Rideshare</li>
+            <li>Flights</li>
+            <li>Enterprise Resource Planning</li>
+            <li>Energy</li>
+            <li>Supply Chain</li>
+            <li>Fintech</li>
+            <li>Fleet</li>
+          </ul>
+
+          <ul class="grid">
+            <li>Developers</li>
+            <li>API Docs</li>
+            <li>Ask Cloverly</li>
+          </ul>
+
+          <ul class="grid gap-y-7">
+            <li>About</li>
+            <li>How It Works</li>
+            <li>Offset Projects</li>
+            <li>Partners</li>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>News & Press</li>
+            <li>Contact</li>
+          </ul>
+
+          <ul class="grid">
+            <li></li>
+            <li>FAQ</li>
+            <li>Careers</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+          </ul>
+
+        </ul>
+        <br><br>
+        <hr>
+        <p class="pt-16 pb-16 text-white">© 2020 Cloverly</p>
+        
+      </div>
+    </footer>
+  </body>
+</html>
